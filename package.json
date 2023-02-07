@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "set \"CI=false\" && react-scripts build",
+    "build": "react-scripts build",
     "build:dev": "env-cmd -f .env.development npm run-script build",
     "docker:build": "docker image build . -t thinkful-ed/zid-fe-project-flashcards-01-qualified",
     "docker:run": "docker run --rm -it -p 3000:3000 thinkful-ed/zid-fe-project-flashcards-01-qualified",
